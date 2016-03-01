@@ -1,0 +1,45 @@
+@keyframes moveCloud {
+    0% {
+        margin-left: 0%
+    }
+    100% {
+        margin-left: 80%
+    }
+}
+@keyframes pendulumAnim{0%,64%{transform:translate(30px,70px)}24%,56%{transform:translate(50px,50px)}32%,48%{transform:translate(70px,30px)}40%{transform:translate(100px,0)}72%{transform:translate(0,100px)}80%{transform:translate(-30px,70px)}88%{transform:translate(-50px,50px)}92%{transform:translate(-70px,30px)}100%{transform:translate(-100px,0)}}
+.move_left_right {
+    animation: moveCloud 13s infinite alternate;
+    animation-timing-function: ease-in-out
+}
+.pendulum {
+    animation: pendulumAnim 2s infinite alternate;
+    animation-timing-function: ease-in;
+    transition: all 2s cubic-bezier(.17, .67, .83, .67);
+}
+@keyframes magicShape{
+    0%,65%,85%{
+        border-radius: 50%
+    }
+    15%{
+        border-top-left-radius: 0%;
+        border-top-right-radius: 50%;
+        border-bottom-left-radius: 50%;
+        border-bottom-right-radius: 50%;
+        transform: rotate(45deg)
+    }
+    35%{
+        transform: rotate(180deg);
+        border-radius: 3%;
+    }
+    50%{
+       border-radius: 0%;
+    }
+    100%{
+         transform: rotate(180deg);
+        border-radius: 3%;
+    }
+    
+}
+.magic_shape{
+    animation: magicShape 3s ease-in infinite alternate;
+}
