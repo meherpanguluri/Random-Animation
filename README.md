@@ -10,6 +10,7 @@
 * `move-left-right` - Moves an object from left to right in the screen
 * `pendulum` - pendulum effect for any object (experiment)
 * `magic_shape` - changes from circle to drop to square
+
 ### TODO
 A Lot more to come.....
 
